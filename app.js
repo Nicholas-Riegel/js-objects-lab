@@ -56,7 +56,11 @@ Exercise 6
 1. Arrange the Pokémon in `game.party` by their HP. The one with the highest HP should come first.
 2. You'll need to use the `.sort()` method. How does the compare function work in sorting numbers?
 
-Answer: COME BACK TO 
+Answer: the comparison function takes two numerical parameters (e.g. a and b) and returns an operation on them. If the value returned is negative, a will come before b. If the value returned is positive, b will come before a. Thus the operation a - b will result in a coming before b if b is greater than a. If b is less than a, then the return value will be positive and b will come before a. This will result in sorting the numbers in ascending order.
+
+In order to sort numbers in descending order then, one would have to reverse the operation on the parameters: The operation b - a will result in a coming before b if a is greater than b. If a is less than b, then b - a will be positive and b will come before a.
+
+If a and b are equal than their sort order will not change. 
 
 Solve Exercise 6 here:
 */
