@@ -56,11 +56,33 @@ Exercise 6
 1. Arrange the Pokémon in `game.party` by their HP. The one with the highest HP should come first.
 2. You'll need to use the `.sort()` method. How does the compare function work in sorting numbers?
 
-Answer: the comparison function takes two numerical parameters (e.g. a and b) and returns an operation on them. If the value returned is negative, a will come before b. If the value returned is positive, b will come before a. Thus the operation a - b will result in a coming before b if b is greater than a. If b is less than a, then the return value will be positive and b will come before a. This will result in sorting the numbers in ascending order.
+Answer: In order to sort numbers in ascending order the sort() method with the comparison function would look as follows:
 
-In order to sort numbers in descending order then, one would have to reverse the operation on the parameters: The operation b - a will result in a coming before b if a is greater than b. If a is less than b, then b - a will be positive and b will come before a.
+array.sort((a, b) => {
+  return a - b;
+}
+
+The comparison function takes two numerical parameters (a and b) and returns an operation on them.
+
+The rule to remember is: if the returned value is negative, a will come before b. If the returned value is positive, b will come before a.
+
+Thus if you want the smaller number always to precede the bigger number (ascending order), the operation on a and b should be a - b.
+
+In this case if a is greater than b, a - b will be positive, and b (the smaller number) will come first. In other words, ascending order.
+
+If a is less than b, a - b will be negative, and a (the smaller number) will come first.
+
+In both cases, the smaller number will come first. Ascending order.
+
+In order to create descending order, you want the bigger number to always come first. Thus the operation should be reversed: b - a.
+
+In this case, if a is greater than b, b - a will be negative, and a, the greater number, will come first.
+
+If b is greater than a, b - a will be postive, and b, the greater number, will again come first.
 
 If a and b are equal than their sort order will not change. 
+
+This may be sort of difficult to understand, so it may be easier to memorize that a - b creates ascending order, and b - a creates asending order. 
 
 Solve Exercise 6 here:
 */
