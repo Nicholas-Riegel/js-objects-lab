@@ -70,7 +70,7 @@ Thus if you want the smaller number always to precede the bigger number (ascendi
 
 In this case if a is greater than b, a - b will be positive, and b (the smaller number) will come first. In other words, ascending order.
 
-If a is less than b, a - b will be negative, and a (the smaller number) will come first.
+If a is less than b, a - b will be negative, and a (the smaller number again) will come first.
 
 In both cases, the smaller number will come first. Ascending order.
 
@@ -80,7 +80,7 @@ In this case, if a is greater than b, b - a will be negative, and a, the greater
 
 If b is greater than a, b - a will be postive, and b, the greater number, will again come first.
 
-If a and b are equal than their sort order will not change. 
+If a and b are equal then their sort order will not change. 
 
 This may be sort of difficult to understand, so it may be easier to memorize that a - b creates ascending order, and b - a creates asending order. 
 
